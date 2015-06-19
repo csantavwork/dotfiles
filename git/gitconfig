@@ -1,3 +1,43 @@
+[color]
+    ui = always
+    status = always
+    branch = always
+    diff = always
+    interactive = always
+    pager = true
+    
+[merge]
+    tool = kdiff3
+
+[mergetool "kdiff3"]
+    path = 
+    keepBackup = false
+    trustExitCode = false
+
+[difftool "kdiff3"]
+    path = 
+    keepBackup = false
+    trustExitCode = false
+    
 [user]
-	email = csanta.v.work@gmail.com
-	name = csanta.v.work
+    name = csantavwork
+    email = csanta.v.work@gmail.com 
+
+[core]
+    repositoryformatversion = 0
+    filemode = false
+    bare = false
+    logallrefupdates = true
+    symlinks = false
+    ignorecase = true
+    hideDotFiles = dotGitOnly
+    excludesfile = ~/.gitignore
+
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit --all 
+    lol2 = log --oneline --graph --all --relative-date --decorate
+    pull =
