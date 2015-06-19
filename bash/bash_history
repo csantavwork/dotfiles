@@ -1,0 +1,342 @@
+ls
+mkdir Guacamole
+ls -lsa
+# If ~./inputrc doesn't exist yet, first include the original /etc/inputrc so we don't override it
+if [ ! -a ~/.inputrc ]; then echo "\$include /etc/inputrc" > ~/.inputrc; fi
+# Add option to ~/.inputrc to enable case-insensitive tab completion
+echo "set completion-ignore-case On" >> ~/.inputrc
+ls -lsa
+vim .inputrc 
+sudo apt-get install vim
+vim .inputrc 
+ls
+exit
+cd Guacamole/
+ls
+cd ..
+mkdir Dotfiles
+mkdir Dotfiles/bash
+vim Dotfiles/bash/autocompletion-bash.sh
+vim .bashrc 
+vim Dotfiles/bash/bash-aliases
+vim .bashrc
+vim Dotfiles/bash/.bash_aliases
+ln -s .bash_aliases Dotfiles/bash/.bash_aliases 
+ln -s Dotfiles/bash/.bash_aliases .bash_aliases
+reload
+source
+exit
+..
+cd demo/
+sudo apt-get update
+vim Dotfiles/bash/.bash_aliases 
+cd Dotfiles/bash/
+ls
+rm autocompletion-bash.sh 
+rm bash-aliases 
+ls
+mv .bash_aliases bash_aliases
+cd ~
+ls
+rm .bash_aliases 
+ln -s Dotfiles/bash/bash_aliases .bash_aliases
+vim .bash
+vim .bash_aliases 
+vim .inputrc 
+mv .inputrc Dotfiles/bash/inputrc
+ln -s Dotfiles/bash/inputrc .inputrc
+vim .inputrc 
+sudo apt-get install tomcat7
+sudo vim /etc/tomcat7/tomcat-users.xml 
+sudo apt-get install git
+ls
+git st
+vim .bashrc 
+vim /etc/bash_completion.d/git-prompt 
+vim /etc/bash_completion.d/git
+vim /etc/bash_completion.d/git-prompt 
+vim .bashrc
+echo 'source /etc/bash_completion.d/git-prompt' >> .bashrc
+source .bashrc
+git st
+sudo apt-get install tomcat7-admin tomcat-7docs tomcat7-examples
+sudo apt-get install tomcat7-admin tomcat7-docs tomcat7-examples
+curl -L 'https://gist.githubusercontent.com/csantavwork/1b422de8469b0854cef3/raw/34bafddccc870ac77d66229622c42d221a812d75/Dotfiles' > setup.sh
+sudo apt-get install curl
+curl -L 'https://gist.githubusercontent.com/csantavwork/1b422de8469b0854cef3/raw/34bafddccc870ac77d66229622c42d221a812d75/Dotfiles' > setup.sh
+chmod 744 setup.sh 
+./setup.sh 
+ls -lsa
+vim .profile 
+exit
+cd /usr/lib/jvm/
+ls
+java -version
+echo $JAVA_HOME
+env | grep java
+env
+sudo service tomcat7 restart
+sudo /etc/init.d/guacd stop
+sudo /etc/init.d/guacd start
+ls -lsa
+sudo /etc/init.d/guacd stop
+sudo service tomcat7 restart
+sudo /etc/init.d/guacd start
+cd ~
+ls
+sudo vim /etc/guacamole/guacamole.properties
+cd ~
+ls
+cd Down
+cd Downloads/
+ls
+cd cua
+cd guacamole-client-0.9.7/
+ls
+cd doc/
+ls
+cd guacamole-example/
+ls
+..
+cd guacamole
+ls
+cd example/
+ls
+cp user-mapping.xml /etc/guacamole/
+sudo cp user-mapping.xml /etc/guacamole/
+cd /etc/guacamole/
+ls
+sudo vim user-mapping.xml 
+cd /usr/share/tomcat7
+ls
+ls -lsa
+cd bin/
+ls
+..
+echo $CATALINA_BASE
+ls -lsa
+cd .guacamole/
+ls
+..
+cd /var/lib/tomcat7/
+ls
+cd webapps/
+ls
+ls -lsa
+cd /var/lib/guacamole/
+ls
+ls -lsa
+chown tomcat7 guacamole-0.9.7.war 
+sudo chown tomcat7 guacamole-0.9.7.war 
+ls
+ls -lsa
+chmod 744 guacamole-0.9.7.war 
+sudo chmod 744 guacamole-0.9.7.war 
+ls -lsa
+sudo chmod 755 guacamole-0.9.7.war 
+ls -lsa
+cd /var/lib/tomcat7/
+ls
+cd webapps/
+ls -lsa
+cd guacamole-0.9.7/
+ls
+sudo service tomcat7 restart
+ifconfig
+ping 192.168.56.1
+git status
+ls
+ls -lsa
+sudo vim /etc/tomcat7/tomcat-users.xml 
+service tomcat restart
+service tomcat7 restart
+sudo service tomcat7 restart
+sudo vim /etc/tomcat7/tomcat-users.xml 
+sudo service tomcat7 restart
+google-chrome-stable 
+cd ~
+git st
+~
+mkdir guacamole
+cd guacamole
+ls
+google-chrome
+git clone https://github.com/glyptodon/guacamole-server.git
+git clone https://github.com/glyptodon/guacamole-client.git
+cd guacamole-server/
+ls
+git st
+git status
+curl -L 'https://gist.githubusercontent.com/csantavwork/d9e8a54c5bfbece2869b/raw/guacamole_req.sh' >> ~/.guacamole_req.sh
+..
+ls -lsa
+mv .guacamole_req.sh guacamoledependencies.sh
+chmod 744 guacamoledependencies.sh 
+sudo ./guacamoledependencies.sh 
+autoreconf
+cd guacamole
+cd guacamole-server/
+./configure
+autoreconf
+sudo apt-get install autoconf
+sudo autoreconf -fi
+sudo apt-get update
+autoreconf -fi
+sudo 11
+sudo autoreconf -fi
+./configure 
+sudo ./configure 
+autoreconf
+sudo autoreconf
+autoreconf -fi
+sudo autoreconf -fi
+autoconf -v
+autoconf --version
+man autoconf
+man autoconf -fi --verbose
+autoconf ---verbose -fi
+autoconf -fi --verbose
+autoreconf -fi --verbose
+sudo autoreconf -fi --verbose
+man autoreconf
+autoconf -f
+sudo autoconf -f
+env 
+env |AP
+env 
+sudo autoconf -f
+env | grep AC_PROG
+vim configure.ac 
+sudo autoconf -f
+sudo apt-get install -y libtool
+autoreconf -fi
+sudo autoreconf -fi
+./configure
+sudo apt-get install -y libpango1.0-dev
+./configure
+./configure --with-init-dir=/etc/init.d
+make
+make install
+sudo make install
+sudo ldconfig
+ls
+ls -lsa
+cd /var/lib/
+ls
+cd ~
+ls
+cd Downloads/
+ls
+tar -xzf guacamole-client-0.9.7.tar.gz 
+ls
+cd guacamole-client-0.9.7/
+ls
+cd guacamole
+ls
+cd doc/
+ls
+cd example/
+ls
+cd /var/libs
+cd /var/lib
+ls
+cd ~
+ls
+cd guacamole
+ls
+cd guacamole-server/
+sudo make 
+sudo make install
+cd /usr/local/lib
+ls
+cd ~/Downloads/
+ls
+tar -xzf guacamole-0.9.7.war
+cd guacamole-client-0.9.7/
+ls
+cd doc
+ls
+cd guacamole-example/
+ls
+ls -lsa
+..
+cd guacamole
+ls
+ls -lsa
+cd doc/
+ls -lsa
+cd example/
+ls -lsa
+sudo mkdir /etc/guacamole
+mkdir /usr/share/tomcat7/.guacamole
+sudo mkdir /usr/share/tomcat7/.guacamole
+sudo touch /etc/guacamole/guacamole.properties
+gedit
+sudo gedit /etc/guacamole/guacamole.properties 
+cat /etc/guacamole/guacamole.properties
+sudo mkdir /var/lib/guacamole
+cd ~/Downloads/
+ls
+sudo mv guacamole-0.9.7.war /var/lib/guacamole/
+sudo ln -s /var/lib/guacamole/guacamole-0.9.7.war /var/lib/tomcat7/webapps/
+cd /usr/share/tomcat7/.guacamole/
+ls
+ln -s /etc/guacamole/guacamole.properties /usr/share/tomcat7/.guacamole/
+sudo ln -s /etc/guacamole/guacamole.properties /usr/share/tomcat7/.guacamole/
+sudo service tomcat7 restart
+sudo /etc/init.d/guacd start
+java -v
+java --version
+javac -v
+sudo apt-get default-jdk
+sudo apt-get install default-jdk
+sudo vim /etc/default/tomcat7 
+sudo vim /etc/guacamole/guacamole.properties
+sudo /etc/init.d/guacd stop
+sudo service tomcat7 st
+sudo service tomcat7 start
+sudo /etc/init.d/guacd start
+cd /var/log/tomcat7/
+ls
+cat catalina.out 
+cd /etc/guacamole/
+ls
+sudo vim user-mapping.xml 
+sudo /etc/init.d/guacd start
+sudo /etc/init.d/guacd stop
+sudo /etc/init.d/guacd start
+ifconfig
+cd /var/log/tomcat7/
+ls
+cat catalina.out 
+ifconfig
+vim /etc/guacamole/user-mapping.xml 
+sudo vim /etc/guacamole/user-mapping.xml 
+sudo service tomcat7 stop
+sudo /etc/init.d/guacd stop
+sudo service tomcat7 start
+sudo /etc/init.d/guacd start
+sudo vim /etc/guacamole/user-mapping.xml 
+sudo echo <<EOF
+hallo, das ist ein test
+EOF > test.test
+EOF
+
+ls
+sudo echo <<EOF
+hallo, das ist ein test
+EOF > test.test
+EOF
+
+> test.test
+locate guacamole.war
+sudo locate guacamole.war
+locate
+locate *.war
+cd /
+locate .war
+sudo locate .war
+socate *.war
+locate *.war
+find / -name guacamole-0.9.7.war
+sudo find / -name guacamole-0.9.7.war
