@@ -12,11 +12,13 @@ echo '=== set symlinks'
 function create_symlinks() {
 	for file in *; do
 	  if [ -d $file ]; then
-		(cd $file; create_symlinks)
+		if [ "$file" != "." ] && [ "$file" != ".." ]; then
+			(cd $file; create_symlinks)
+		fi
 	  else
 		if [ "$file" != "$Self" ]; then
-		    echo "ln -s `pwd`/$file ~/.`basename $file`"
-#		    ln -s `pwd`/$file ~/.`basename $file`
+#		    echo "ln -s `pwd`/$file ~/.`basename $file`"
+		    ln -s `pwd`/$file ~/.`basename $file`
 		fi
 	  fi
 	done
